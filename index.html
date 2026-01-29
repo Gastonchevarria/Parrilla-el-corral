@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang=""es"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Parrilla El Corral - Menú</title>
+    <meta name=""description"" content=""Menú de Parrilla El Corral en Villa María. Tradición, Fuego y Encuentro. Parrilla Libre y una extensa cava de vinos."">
+    <link href=""https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"" rel=""stylesheet"">
+    <link href=""https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"" rel=""stylesheet"">
+    <script src=""https://unpkg.com/lucide@latest""></script>
+    <style>
+        /* Paleta de colores inspirada en la tarjeta */
+        :root {
+            --color-negro: #1a1a1a; /* Fondo oscuro */
+            --color-oro: #e5b34e; /* Color de acento, amarillo dorado */
+            --color-gris-claro: #f2f2f2; /* Texto principal */
+            --color-gris-medio: #b0b0b0; /* Texto secundario */
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--color-negro);
+            color: var(--color-gris-claro);
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .text-oro {
+            color: var(--color-oro);
+        }
+        .bg-oro {
+            background-color: var(--color-oro);
+        }
+        .border-oro {
+            border-color: var(--color-oro);
+        }
+        /* Efecto de fondo con imagen de parrilla */
+        .hero-bg {
+            background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.9)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background-color: rgba(38, 38, 38, 0.9);
+        }
+        .menu-item {
+            border-bottom: 1px solid rgba(229, 179, 78, 0.2);
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class=""bg-black py-6 shadow-md fixed w-full z-10 transition duration-300 ease-in-out"" id=""main-header"">
+        <div class=""container mx-auto px-4 flex flex-col md:flex-row justify-between items-center"">
+            <div class=""flex items-center mb-4 md:mb-0"">
+                <i data-lucide=""flame"" class=""text-oro h-8 w-8 mr-2""></i>
+                <h1 class=""text-2xl font-bold text-oro brand-font tracking-wider"">PARRILLA EL CORRAL</h1>
+            </div>
+            <div class=""text-center md:text-right text-gray-300"">
+                <p class=""text-sm"">Villa María</p>
+                <p class=""text-sm flex items-center justify-center md:justify-end"">
+                    <i data-lucide=""map-pin"" class=""h-4 w-4 mr-1 text-oro""></i> Bv. Sarmiento y San Martín
+                </p>
+                <p class=""text-sm flex items-center justify-center md:justify-end mt-1"">
+                    <i data-lucide=""phone"" class=""h-4 w-4 mr-1 text-oro""></i> Reservas: 3535 656 154
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class=""hero-bg min-h-screen flex items-center justify-center pt-32 md:pt-20"">
+        <div class=""text-center px-4"">
+            <i data-lucide=""utensils"" class=""text-oro h-16 w-16 mx-auto mb-4""></i>
+            <h2 class=""text-4xl md:text-6xl font-bold text-white mb-4 brand-font"">Tradición, Fuego y Encuentro</h2>
+            <p class=""text-xl text-gray-300 mb-8"">Invitamos a disfrutar del ritual del fuego.</p>
+            <a href=""#nuestra-propuesta"" class=""bg-oro text-black font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition duration-300"">
+                Ver Menú
+            </a>
+        </div>
+    </section>
+
+    <!-- Nuestra Propuesta & Parrilla Libre -->
+    <section id=""nuestra-propuesta"" class=""py-20"">
+        <div class=""container mx-auto px-4"">
+            <div class=""max-w-3xl mx-auto text-center mb-16"">
+                <h2 class=""text-3xl font-bold text-oro mb-6 brand-font"">Nuestra Propuesta</h2>
+                <p class=""text-lg text-gray-300 leading-relaxed"">
+                    Una selección de nuestros mejores cortes, acompañados de la frescura de nuestra huerta y la calidez de la cocina casera.
+                </p>
+            </div>
+
+            <div class=""section-bg rounded-lg p-8 md:p-12 shadow-2xl max-w-4xl mx-auto border-t-4 border-oro"">
+                <div class=""flex flex-col md:flex-row items-center justify-between"">
+                    <div class=""md:w-2/3 mb-8 md:mb-0"">
+                        <div class=""flex items-center mb-4"">
+                            <i data-lucide=""flame"" class=""text-oro h-8 w-8 mr-3""></i>
+                            <h3 class=""text-3xl font-bold text-white brand-font"">EL RITUAL: PARRILLA LIBRE</h3>
+                        </div>
+                        <ul class=""text-gray-300 list-disc list-inside mb-6 ml-4"">
+                            <li class=""mb-2 flex items-center""><i data-lucide=""check"" class=""text-oro h-4 w-4 mr-2""></i>Selección de cortes asados a la leña</li>
+                        </ul>
+                        <div class=""mb-4"">
+                            <h4 class=""text-xl font-bold text-oro mb-2"">Guarniciones</h4>
+                            <ul class=""text-gray-300 list-disc list-inside ml-4"">
+                                <li class=""mb-2 flex items-center""><i data-lucide=""leaf"" class=""text-oro h-4 w-4 mr-2""></i>Ensaladas frescas de estación</li>
+                                <li class=""flex items-center""><i data-lucide=""potato"" class=""text-oro h-4 w-4 mr-2""></i>Papas fritas tradicionales</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=""md:w-1/3 text-center"">
+                        <div class=""bg-oro text-black p-6 rounded-full inline-block shadow-lg transform hover:scale-105 transition duration-300"">
+                            <span class=""text-4xl font-bold block"">$ 28.000</span>
+                            <span class=""text-sm font-semibold"">por persona</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestra Cava -->
+    <section id=""nuestra-cava"" class=""py-20 bg-opacity-50 bg-black"">
+        <div class=""container mx-auto px-4"">
+            <div class=""text-center mb-16"">
+                <i data-lucide=""wine"" class=""text-oro h-12 w-12 mx-auto mb-4""></i>
+                <h2 class=""text-3xl font-bold text-oro mb-6 brand-font"">Nuestra Cava</h2>
+                <p class=""text-lg text-gray-300"">Una cuidada selección de vinos para acompañar tus momentos.</p>
+            </div>
+
+            <div class=""grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"">
+                <!-- Clásicos de Siempre -->
+                <div class=""section-bg rounded-lg p-6 shadow-lg border-l-4 border-oro"">
+                    <h3 class=""text-xl font-bold text-oro mb-4 brand-font flex items-center""><i data-lucide=""glass-water"" class=""mr-2 h-5 w-5""></i>Clásicos de Siempre</h3>
+                    <ul>
+                        <li class=""menu-item flex justify-between""><span>Don Valentín Lacrado (T / B)</span><span class=""text-oro font-bold"">$ 6.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Portillo Malbec</span><span class=""text-oro font-bold"">$ 8.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Santa Julia Malbec</span><span class=""text-oro font-bold"">$ 8.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Donde Manda Capitán</span><span class=""text-oro font-bold"">$ 9.000</span></li>
+                    </ul>
+                </div>
+
+                <!-- Blancos & Dulces -->
+                <div class=""section-bg rounded-lg p-6 shadow-lg border-l-4 border-oro"">
+                    <h3 class=""text-xl font-bold text-oro mb-4 brand-font flex items-center""><i data-lucide=""grape"" class=""mr-2 h-5 w-5""></i>Blancos & Dulces</h3>
+                    <ul>
+                        <li class=""menu-item flex justify-between""><span>Santa Julia Sauvignon Blanc</span><span class=""text-oro font-bold"">$ 8.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Santa Julia Chenin Dulce</span><span class=""text-oro font-bold"">$ 11.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Trumpeter Chardonnay</span><span class=""text-oro font-bold"">$ 14.000</span></li>
+                    </ul>
+                </div>
+
+                <!-- Bodegas Destacadas -->
+                <div class=""section-bg rounded-lg p-6 shadow-lg border-l-4 border-oro"">
+                    <h3 class=""text-xl font-bold text-oro mb-4 brand-font flex items-center""><i data-lucide=""award"" class=""mr-2 h-5 w-5""></i>Bodegas Destacadas</h3>
+                    <ul>
+                        <li class=""menu-item flex justify-between""><span>Cordero con Piel de Lobo</span><span class=""text-oro font-bold"">$ 8.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Las Perdices LP</span><span class=""text-oro font-bold"">$ 13.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Trumpeter Malbec</span><span class=""text-oro font-bold"">$ 14.000</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Gran Reserva & Alta Gama -->
+                <div class=""section-bg rounded-lg p-6 shadow-lg border-l-4 border-oro"">
+                    <h3 class=""text-xl font-bold text-oro mb-4 brand-font flex items-center""><i data-lucide=""crown"" class=""mr-2 h-5 w-5""></i>Gran Reserva & Alta Gama</h3>
+                    <ul>
+                        <li class=""menu-item flex justify-between""><span>Luigi Bosca Malbec</span><span class=""text-oro font-bold"">$ 23.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Rutini Cabernet - Malbec</span><span class=""text-oro font-bold"">$ 25.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>D.V. Catena Cabernet - Malbec</span><span class=""text-oro font-bold"">$ 28.000</span></li>
+                    </ul>
+                </div>
+
+                <!-- Formatos & Burbujas -->
+                <div class=""section-bg rounded-lg p-6 shadow-lg border-l-4 border-oro"">
+                    <h3 class=""text-xl font-bold text-oro mb-4 brand-font flex items-center""><i data-lucide=""wine"" class=""mr-2 h-5 w-5""></i>Vinos 375cc</h3>
+                    <ul>
+                        <li class=""menu-item flex justify-between""><span>Portillo Malbec (375cc)</span><span class=""text-oro font-bold"">$ 6.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Santa Julia Malbec (375cc)</span><span class=""text-oro font-bold"">$ 7.000</span></li>
+                    </ul>
+                </div>
+
+                <!-- Espumantes -->
+                <div class=""section-bg rounded-lg p-6 shadow-lg border-l-4 border-oro"">
+                    <h3 class=""text-xl font-bold text-oro mb-4 brand-font flex items-center""><i data-lucide=""sparkles"" class=""mr-2 h-5 w-5""></i>Espumantes</h3>
+                    <ul>
+                        <li class=""menu-item flex justify-between""><span>Salentein Brut</span><span class=""text-oro font-bold"">$ 20.000</span></li>
+                        <li class=""menu-item flex justify-between""><span>Chandon Extra Brut</span><span class=""text-oro font-bold"">$ 30.000</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Barra -->
+    <section id=""la-barra"" class=""py-20"">
+        <div class=""container mx-auto px-4"">
+            <div class=""text-center mb-16"">
+                <i data-lucide=""beer"" class=""text-oro h-12 w-12 mx-auto mb-4""></i>
+                <h2 class=""text-3xl font-bold text-oro mb-6 brand-font"">La Barra</h2>
+                <p class=""text-lg text-gray-300"">Refrescantes aperitivos, whiskies y destilados.</p>
+            </div>
+
+            <div class=""grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"">
+                <!-- Aperitivos -->
+                <div class=""section-bg rounded-lg p-8 shadow-lg border-t-4 border-oro text-center md:text-left"">
+                    <h3 class=""text-2xl font-bold text-oro mb-6 brand-font flex items-center justify-center md:justify-start""><i data-lucide=""citrus"" class=""mr-3 h-6 w-6""></i>Aperitivos</h3>
+                    <ul class=""text-gray-300 space-y-2"">
+                        <li>Fernet Branca</li>
+                        <li>Gancia</li>
+                        <li>Cinzano Vermouth</li>
+                        <li>Campari</li>
+                        <li>Ramazzotti Rosato</li>
+                        <li>Martini Rosso</li>
+                    </ul>
+                </div>
+
+                <!-- Whisky & Destilados -->
+                <div class=""section-bg rounded-lg p-8 shadow-lg border-t-4 border-oro text-center md:text-left"">
+                    <h3 class=""text-2xl font-bold text-oro mb-6 brand-font flex items-center justify-center md:justify-start""><i data-lucide=""glass-whiskey"" class=""mr-3 h-6 w-6""></i>Whisky & Destilados</h3>
+                    <ul class=""text-gray-300 space-y-2"">
+                        <li>White Horse</li>
+                        <li>Johnnie Walker Red Label</li>
+                        <li>Johnnie Walker Black Label</li>
+                        <li>Gin Beefeater</li>
+                        <li>Ron Havana Club</li>
+                        <li>Absolut Raspberri</li>
+                    </ul>
+                </div>
+            </div>
+            <div class=""text-center mt-8 text-gray-400"">
+                <p>Consultar precios en barra.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class=""bg-black py-8 text-center text-gray-400"">
+        <div class=""container mx-auto px-4"">
+            <div class=""flex items-center justify-center mb-4"">
+                <i data-lucide=""flame"" class=""text-oro h-6 w-6 mr-2""></i>
+                <h2 class=""text-xl font-bold text-oro brand-font"">PARRILLA EL CORRAL</h2>
+            </div>
+            <p class=""mb-2"">Bv. Sarmiento y San Martín - Villa María</p>
+            <p class=""mb-4"">Reservas: 3535 656 154</p>
+            <div class=""flex justify-center space-x-4 mb-4"">
+                <a href=""#"" class=""text-gray-400 hover:text-oro transition duration-300""><i data-lucide=""facebook"" class=""h-6 w-6""></i></a>
+                <a href=""#"" class=""text-gray-400 hover:text-oro transition duration-300""><i data-lucide=""instagram"" class=""h-6 w-6""></i></a>
+            </div>
+            <p class=""text-sm"">&copy; 2026 Parrilla El Corral. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-95', 'py-4');
+                header.classList.remove('py-6');
+            } else {
+                header.classList.remove('bg-opacity-95', 'py-4');
+                header.classList.add('py-6');
+            }
+        });
+    </script>
+</body>
+</html>
